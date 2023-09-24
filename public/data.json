@@ -1,0 +1,134 @@
+[
+  {
+    "id": 1,
+    "title": "Provide Clean Water for Children",
+    "category": "Health",
+    "image": "https://ibb.co/BT2HyH8",
+    "text_color": "#0052FF",
+    "category_bg": "#AEC8FF",
+    "card_bg": "#D9E5FF",
+    "description": "Help provide clean and safe drinking water for children in need. Your generous donation will make a significant impact on their health and well-being.",
+    "donation_amount": "50$"
+  },
+  {
+    "id": 2,
+    "title": "Support Quality Education",
+    "category": "Education",
+    "image": "https://ibb.co/34ft1Fb",
+    "text_color": "#FF444A",
+    "category_bg": "#FFC3C5",
+    "card_bg": "#FFE3E4",
+    "description": "Support quality education for all by contributing to initiatives that improve schools, support students, and empower teachers to provide the best possible education.",
+    "donation_amount": "75$"
+  },
+  {
+    "id": 3,
+    "title": "Donate Gently Used Clothing",
+    "category": "Clothing",
+    "image": "https://ibb.co/bJ8mC7C",
+    "text_color": "#79C23F",
+    "category_bg": "#D4ECC1",
+    "card_bg": "#EBF6E2",
+    "description": "Donate your gently used clothing to help those in need. Your contribution will provide warm clothing to individuals and families during the colder months.",
+    "donation_amount": "30$"
+  },
+  {
+    "id": 4,
+    "title": "Combat Hunger and Food Insecurity",
+    "category": "Food",
+    "image": "https://ibb.co/C8C5cr4",
+    "text_color": "#F87147",
+    "category_bg": "#FDD2C4",
+    "card_bg": "#FEEAE3",
+    "description": "Support efforts to ensure everyone has access to nutritious food. Your donation will help fight hunger and improve food security in communities.",
+    "donation_amount": "40$"
+  },
+  {
+    "id": 5,
+    "title": "Provide Clean Water for Children",
+    "category": "Health",
+    "image": "https://ibb.co/BT2HyH8",
+    "text_color": "#0052FF",
+    "category_bg": "#AEC8FF",
+    "card_bg": "#D9E5FF",
+    "description": "Provide clean drinking water for children in underserved areas. Your contribution will promote better health and well-being for young ones.",
+    "donation_amount": "60$"
+  },
+  {
+    "id": 6,
+    "title": "Support Quality Education",
+    "category": "Education",
+    "image": "https://ibb.co/34ft1Fb",
+    "text_color": "#FF444A",
+    "category_bg": "#FFC3C5",
+    "card_bg": "#FFE3E4",
+    "description": "Empower the next generation through education. Your support will make a difference in students' lives and their future success.",
+    "donation_amount": "90$"
+  },
+  {
+    "id": 7,
+    "title": "Donate Gently Used Clothing",
+    "category": "Clothing",
+    "image": "https://ibb.co/bJ8mC7C",
+    "text_color": "#79C23F",
+    "category_bg": "#D4ECC1",
+    "card_bg": "#EBF6E2",
+    "description": "Contribute to a clothing drive and help clothe those in need. Your donation will provide essential clothing to individuals facing hardships.",
+    "donation_amount": "45$"
+  },
+  {
+    "id": 8,
+    "title": "Combat Hunger and Food Insecurity",
+    "category": "Food",
+    "image": "https://ibb.co/C8C5cr4",
+    "text_color": "#F87147",
+    "category_bg": "#FDD2C4",
+    "card_bg": "#FEEAE3",
+    "description": "Join the fight against hunger by supporting initiatives that provide access to quality food. Your generosity will make a difference in people's lives.",
+    "donation_amount": "55$"
+  },
+  {
+    "id": 9,
+    "title": "Provide Clean Water for Children",
+    "category": "Health",
+    "image": "https://ibb.co/BT2HyH8",
+    "text_color": "#0052FF",
+    "category_bg": "#AEC8FF",
+    "card_bg": "#D9E5FF",
+    "description": "Make a positive impact on children's health by ensuring access to clean and safe drinking water. Your donation will change lives for the better.",
+    "donation_amount": "70$"
+  },
+  {
+    "id": 10,
+    "title": "Support Quality Education",
+    "category": "Education",
+    "image": "https://ibb.co/34ft1Fb",
+    "text_color": "#FF444A",
+    "category_bg": "#FFC3C5",
+    "card_bg": "#FFE3E4",
+    "description": "Support educational initiatives that empower students to reach their full potential. Your contribution will shape a brighter future for learners.",
+    "donation_amount": "80$"
+  },
+  {
+    "id": 11,
+    "title": "Donate Gently Used Clothing",
+    "category": "Clothing",
+    "image": "https://ibb.co/bJ8mC7C",
+    "text_color": "#79C23F",
+    "category_bg": "#D4ECC1",
+    "card_bg": "#EBF6E2",
+    "description": "Help provide clothing to those in need by participating in a used clothing drive. Your donation will warm hearts and bodies.",
+    "donation_amount": "35$"
+  },
+  {
+    "id": 12,
+    "title": "Combat Hunger and Food Insecurity",
+    "category": "Food",
+    "image": "https://ibb.co/C8C5cr4",
+    "text_color": "#F87147",
+    "category_bg": "#FDD2C4",
+    "card_bg": "#FEEAE3",
+    "description": "Combat hunger and food insecurity by supporting programs that provide nutritious meals. Your generosity will nourish communities.",
+    "donation_amount": "45$"
+  }
+]
