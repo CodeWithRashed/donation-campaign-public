@@ -14,9 +14,9 @@ const MainLayout = () => {
     }
   }, [location.pathname]);
   return (
-    <div className="container">
+    <div className="">
       {inHome ? (
-        <div className="container relative">
+        <div className="relative">
           <div className="bg-overly absolute -z-10 w-full opacity-5">
             <img
               src="./teambg.jpg"
@@ -30,7 +30,7 @@ const MainLayout = () => {
           </div>
         </div>
       ) : (
-        <div className="container">
+        <div className="">
           <Nav></Nav>
           <Outlet></Outlet>
         </div>

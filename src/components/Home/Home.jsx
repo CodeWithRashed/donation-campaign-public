@@ -3,18 +3,44 @@ import Banner from "./Banner";
 import ProjectCard from "./ProjectCard";
 import { getData } from "../../hook/getData";
 const Home = () => {
-  const [data, setData] = useState([])
-  useEffect(() =>{
-    getData()
-    .then((result) => {
-      setData(result)
-    })
-  }, [])
+  const [data, setData] = useState([]);
+  const [displayData, setDisplayData] = useState([]);
+  const [searchData, serSearchData] = useState("");
+  useEffect(() => {
+    getData().then((result) => {
+      setData(result);
+      setDisplayData(result);
+    });
+  }, []);
+
+  const handleChange = (event) => {
+    event.preventDefault();
+    setDisplayData(data);
+    if (!event.target.value == "") {
+      serSearchData(event.target.value.toLowerCase());
+    }
+    serSearchData(event.target.value.toLowerCase())
+  };
+
+  const handleSearch = (event) => {
+    event.preventDefault();
+    setDisplayData(data);
+    if (!searchData == "") {
+      let updateData = data.filter((data) =>
+        searchData.includes(data.category.toLowerCase())
+      );
+      setDisplayData(updateData);
+    }else{
+      return alert("can not emty");
+    }
+
+  };
+
   return (
     <div>
-      <Banner></Banner>
+      <Banner handleSearch={handleSearch} handleChange={handleChange}></Banner>
       <div className="card-container grid grid-cols-4 gap-8 py-20">
-        {data.map((donationProject) => (
+        {displayData.map((donationProject) => (
           <ProjectCard
             key={donationProject.id}
             data={donationProject}

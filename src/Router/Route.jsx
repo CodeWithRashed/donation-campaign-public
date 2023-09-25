@@ -4,6 +4,7 @@ import HomePage from "../Pages/HomePage";
 import DonationPage from "../Pages/DonationPage";
 import StatisticsPage from "../Pages/StatisticsPage";
 import CampaignPage from "../Pages/CampaignPage";
+import DonationCampaignPage from "../Pages/DonationCampaignPage";
 import ErrorPage from "../Pages/ErrorPage";
 
 export const router = createBrowserRouter([
@@ -19,6 +20,10 @@ export const router = createBrowserRouter([
       {
         path: "/donation",
         element: <DonationPage></DonationPage>,
+      },
+      {
+        path: "donation/campaign/:id",
+        element: <DonationCampaignPage></DonationCampaignPage>,
       },
       {
         path: "/campaign/:id",

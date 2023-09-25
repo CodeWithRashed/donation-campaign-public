@@ -10,7 +10,7 @@ const Nav = () => {
 
       <div className="border-2 border-red-300">
         {/* Mobile Navbar Start*/}
-        <div className="dropdown dropdown-end lg:hidden">
+        <div className="dropdown dropdown-end">
           <label tabIndex={0} className="btn btn-ghost ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const Nav = () => {
    
         </div>
         {/* Mobile Navbar End*/}
-        <div className="gap-8 hidden lg:flex">
+        <div className="gap-8 hidden">
           <div className="w-full">
             <NavLink
               to="/"
