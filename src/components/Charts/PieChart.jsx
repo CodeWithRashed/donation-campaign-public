@@ -3,7 +3,7 @@ import 'chartjs-plugin-datalabels';
 import { Pie } from "react-chartjs-2";
 import ChartDataLabels from 'chartjs-plugin-datalabels';
 import { useEffect, useState } from "react";
-import { getTotalDonationNeed } from "../../hook/getTotalDonationNeed";
+import { getTotalDonationNeed } from "../../hook/getTotalDonationNeed.js";
 import { getDonatedAmount } from "../../hook/getDonatedAmount";
 
 ChartJS.register(ArcElement, Legend, ChartDataLabels, Tooltip);

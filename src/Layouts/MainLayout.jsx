@@ -19,7 +19,7 @@ const MainLayout = () => {
         <div className="relative">
           <div className="bg-overly absolute -z-10 w-full opacity-5">
             <img
-              src="./teambg.jpg"
+              src="https://i.postimg.cc/Ssm2T2H4/Rectangle-4281.png"
               alt=""
               className="w-full h-full object-cover object-center"
             />
