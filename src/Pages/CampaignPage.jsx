@@ -15,7 +15,7 @@ const CampaignPage = () => {
   const handleDonate = () => {
     let donatedCampaignArray = [];
     let localItems = JSON.parse(localStorage.getItem("id")) || [];
-    if (localItems.includes(id.id)) {
+    if (localItems.includes(parseInt(id.id))) {
       return alert("added");
     }
     if (!localItems) {
@@ -31,13 +31,29 @@ const CampaignPage = () => {
   const filteredData = data.filter((singleData) => singleData.id == id.id);
 
   return (
-    <div>
+    <div className="p-12">
       {filteredData.map((singleCampaign) => (
         <div className="campaign-container" key={singleCampaign.id}>
-          <p>{singleCampaign.title}</p>
-          <button className="bg-red-300 p-3" onClick={handleDonate}>
-            Donate
-          </button>
+          <div className="image-container relative">
+            <img
+              src={singleCampaign.image}
+              alt="campaign-image"
+              className="w-full h-[70vh] object-fill rounded-lg"
+            />
+            <div className="donate-cta p-4 absolute bottom-0 w-full bg-gradient-to-r from-[rgba(18,18,18,0.7)] to-[rgba(18,18,18,0.7)]">
+              <button
+                className={`bg-[${singleCampaign.text_color}] text-white p-3 rounded-lg`}
+                onClick={handleDonate}
+              >
+                Donate {singleCampaign.donation_amount}
+              </button>
+            </div>
+          </div>
+        <div className="content mt-10 space-y-8">
+        <h1 className="text-3xl font-bold">{singleCampaign.title}</h1>
+        <p className="text-[#0B0B0B90]">{singleCampaign.description}</p>
+        </div>
+         
         </div>
       ))}
     </div>
