@@ -30,7 +30,7 @@ const MainLayout = () => {
           </div>
         </div>
       ) : (
-        <div className="">
+        <div className="px-6 md:px-14 lg:px-20">
           <Nav></Nav>
           <Outlet></Outlet>
         </div>

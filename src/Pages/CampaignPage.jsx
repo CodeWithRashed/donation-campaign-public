@@ -24,28 +24,28 @@ const CampaignPage = () => {
     } else {
       donatedCampaignArray.push(...localItems, parseInt(id.id));
       localStorage.setItem("id", JSON.stringify(donatedCampaignArray));
-      console.log(localItems);
+
     }
   };
 
   const filteredData = data.filter((singleData) => singleData.id == id.id);
 
   return (
-    <div className="p-12">
+    <div className="py-12">
       {filteredData.map((singleCampaign) => (
         <div className="campaign-container" key={singleCampaign.id}>
           <div className="image-container relative">
             <img
               src={singleCampaign.image}
               alt="campaign-image"
-              className="w-full h-[70vh] object-fill rounded-lg"
+              className="w-full h-[70vh] object-cover object-center rounded-lg"
             />
             <div className="donate-cta p-4 absolute bottom-0 w-full bg-gradient-to-r from-[rgba(18,18,18,0.7)] to-[rgba(18,18,18,0.7)]">
               <button
-                className={`bg-[${singleCampaign.text_color}] text-white p-3 rounded-lg`}
+                className={`bg-[${singleCampaign.text_color}] text-white p-3 rounded-lg font-bold`}
                 onClick={handleDonate}
               >
-                Donate {singleCampaign.donation_amount}
+                Donate {singleCampaign.donation_amount}.00$
               </button>
             </div>
           </div>
