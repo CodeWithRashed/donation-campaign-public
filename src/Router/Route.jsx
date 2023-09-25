@@ -3,6 +3,7 @@ import MainLayout from "../Layouts/MainLayout";
 import HomePage from "../Pages/HomePage";
 import DonationPage from "../Pages/DonationPage";
 import StatisticsPage from "../Pages/StatisticsPage";
+import CampaignPage from "../Pages/CampaignPage";
 import ErrorPage from "../Pages/ErrorPage";
 
 export const router = createBrowserRouter([
@@ -18,6 +19,10 @@ export const router = createBrowserRouter([
       {
         path: "/donation",
         element: <DonationPage></DonationPage>,
+      },
+      {
+        path: "/campaign/:id",
+        element: <CampaignPage></CampaignPage>,
       },
       {
         path: "/statistics",
