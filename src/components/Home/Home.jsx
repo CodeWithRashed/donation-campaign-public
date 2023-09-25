@@ -39,7 +39,7 @@ const Home = () => {
   return (
     <div>
       <Banner handleSearch={handleSearch} handleChange={handleChange}></Banner>
-      <div className="card-container grid grid-cols-4 gap-8 py-20">
+      <div className="card-container grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-20 ">
         {displayData.map((donationProject) => (
           <ProjectCard
             key={donationProject.id}

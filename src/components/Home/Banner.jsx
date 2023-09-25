@@ -7,7 +7,7 @@ const Banner = (props) => {
     <div className="h-[60vh] flex justify-center items-center ">
       
       <div className="content flex flex-col justify-center items-center gap-14">
-      <h1 className="text-5xl text-center">I Grow By Helping People In Need</h1>
+      <h1 className="text-2xl md:text-3xl lg:text-5xl text-center">I Grow By Helping People In Need</h1>
       <div className="search">
         <form onSubmit={handleSearch}>
         <div className="join">

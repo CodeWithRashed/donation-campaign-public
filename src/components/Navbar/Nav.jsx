@@ -2,15 +2,15 @@ import { Link, NavLink } from "react-router-dom";
 
 const Nav = () => {
   return (
-    <div className="navbar nav-container flex items-center !justify-between py-10 font-bold m-0">
+    <div className="navbar nav-container flex items-center !justify-between py-10 font-bold !px-0">
 
         <Link to="/" className="navbar-start">
-          <img src="https://i.ibb.co/QmYrhjZ/logo.png" alt="logo" className="w-48 border-2 border-red-300" />
+          <img src="https://i.ibb.co/QmYrhjZ/logo.png" alt="logo" className="w-48" />
         </Link>
 
-      <div className="border-2 border-red-300">
+      <div className="">
         {/* Mobile Navbar Start*/}
-        <div className="dropdown dropdown-end">
+        <div className="dropdown dropdown-end lg:hidden">
           <label tabIndex={0} className="btn btn-ghost ">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -76,7 +76,7 @@ const Nav = () => {
    
         </div>
         {/* Mobile Navbar End*/}
-        <div className="gap-8 hidden">
+        <div className="gap-8 hidden lg:flex">
           <div className="w-full">
             <NavLink
               to="/"
