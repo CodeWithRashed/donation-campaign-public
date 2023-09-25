@@ -31,8 +31,6 @@ const PieChart = () => {
     })
   }, [donatedAmountParcent])
 
-console.log(donatedAmountParcent)
-console.log(donationNeedParcent)
 
   const data = {
     labels: ['Your Donation', 'Total Donation'],

@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "title": "Provide Clean Water for Children",
+    "title": "Clean Water for Children",
     "category": "Health",
     "image": "https://i.postimg.cc/1R7sCq1c/health-min.jpg",
     "text_color": "#0052FF",
@@ -34,7 +34,7 @@
   },
   {
     "id": 4,
-    "title": "Combat Hunger and Food Insecurity",
+    "title": "Fight Hunger & Food Insecurity",
     "category": "Food",
     "image": "https://i.postimg.cc/q7qGGSsG/food-min.jpg",
     "text_color": "#F87147",
@@ -45,7 +45,7 @@
   },
   {
     "id": 5,
-    "title": "Provide Clean Water for Children",
+    "title": "Clean Water for Children",
     "category": "Health",
     "image": "https://i.postimg.cc/1R7sCq1c/health-min.jpg",
     "text_color": "#0052FF",
@@ -78,7 +78,7 @@
   },
   {
     "id": 8,
-    "title": "Combat Hunger and Food Insecurity",
+    "title": "Fight Hunger & Food Insecurity",
     "category": "Food",
     "image": "https://i.postimg.cc/q7qGGSsG/food-min.jpg",
     "text_color": "#F87147",
@@ -89,7 +89,7 @@
   },
   {
     "id": 9,
-    "title": "Provide Clean Water for Children",
+    "title": "Clean Water for Children",
     "category": "Health",
     "image": "https://i.postimg.cc/1R7sCq1c/health-min.jpg",
     "text_color": "#0052FF",
@@ -122,13 +122,13 @@
   },
   {
     "id": 12,
-    "title": "Combat Hunger and Food Insecurity",
+    "title": "Fight Hunger & Food Insecurity",
     "category": "Food",
     "image": "https://i.postimg.cc/q7qGGSsG/food-min.jpg",
     "text_color": "#F87147",
     "category_bg": "#FDD2C4",
     "card_bg": "#FEEAE3",
-    "description": "Combat hunger and food insecurity by supporting programs that provide nutritious meals. Your generosity will nourish communities.",
+    "description": "Fight Hunger & Food Insecurity by supporting programs that provide nutritious meals. Your generosity will nourish communities.",
     "donation_amount": "45"
   }
 ]

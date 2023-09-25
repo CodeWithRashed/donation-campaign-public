@@ -17,21 +17,21 @@ const DonationCampaignPage = () => {
   console.log(filteredData)
 
   return (
-    <div className="p-12">
+    <div className="pb-10">
       {filteredData.map((singleCampaign) => (
         <div className="campaign-container" key={singleCampaign.id}>
           <div className="image-container relative">
             <img
               src={singleCampaign.image}
               alt="campaign-image"
-              className="w-full h-[70vh] object-fill rounded-lg"
+              className="w-full h-[70vh] object-cover rounded-lg"
             />
-             <div className="donate-cta p-4 absolute bottom-0 w-full bg-gradient-to-r from-[rgba(18,18,18,0.7)] to-[rgba(18,18,18,0.7)]">
+             <div className="donate-cta p-4 lg:p-3 absolute bottom-0 w-full bg-gradient-to-r from-[rgba(18,18,18,0.7)] to-[rgba(18,18,18,0.7)]">
               <button
-                className={`bg-[${singleCampaign.text_color}] text-white p-3 rounded-lg`}
+                className={`bg-[${singleCampaign.text_color}] text-white px-3 py-2 rounded-lg`}
            
               >
-               Thanks For Your Donation
+               You have donated in this campaign! 
               </button>
             </div>
           </div>
