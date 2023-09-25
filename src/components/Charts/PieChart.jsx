@@ -9,8 +9,8 @@ import { getDonatedAmount } from "../../hook/getDonatedAmount";
 ChartJS.register(ArcElement, Legend, ChartDataLabels, Tooltip);
 
 const PieChart = () => {
-  const [donatedAmountParcent, setDonatedAmountParcent] = useState()
-  const [donationNeedParcent, setDonationNeedParcent] = useState()
+  const [donatedAmountPercent, setDonatedAmountPercent] = useState()
+  const [donationNeedPercent, setDonationNeedPercent] = useState()
 
 
   useEffect(() => {
@@ -19,17 +19,17 @@ const PieChart = () => {
     getTotalDonationNeed()
     .then((result) => {
       donationNeed = result
-      setDonationNeedParcent((100 - donatedAmountParcent).toFixed(2))
+      setDonationNeedPercent((100 - donatedAmountPercent).toFixed(2))
     })
 
     getDonatedAmount()
     .then((result1) => {
       donatedAmount = result1
-      setDonatedAmountParcent(((donatedAmount / donationNeed) * 100).toFixed(2))
+      setDonatedAmountPercent(((donatedAmount / donationNeed) * 100).toFixed(2))
 
 
     })
-  }, [donatedAmountParcent])
+  }, [donatedAmountPercent])
 
 
   const data = {
@@ -38,7 +38,7 @@ const PieChart = () => {
       {
         label: 'Donation Dataset',
         
-        data: [donatedAmountParcent, donationNeedParcent],
+        data: [donatedAmountPercent, donationNeedPercent],
         backgroundColor: ['#FF444A', '#00C49F'],
         hoverOffset: 4,
       },
@@ -66,7 +66,7 @@ const PieChart = () => {
   };
 
   return (
-    <div>
+    <div >
       <Pie data={data} options={chartOptions} width={250} height={350} />
     </div>
   );
