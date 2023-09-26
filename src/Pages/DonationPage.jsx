@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getData } from "../hook/getData";
 import { Link } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const Donation = () => {
   const [donatedCamp, setDonatedCamp] = useState([]);
@@ -28,6 +30,16 @@ const Donation = () => {
   };
   const handleClear = () => {
     localStorage.clear();
+    toast.success('All Donation Cleared', {
+      position: "bottom-center",
+      autoClose: 1000,
+      hideProgressBar: true,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: false,
+      progress: false,
+      theme: "light",
+      });
     setShowAll(false);
     setDisplayData([])
     
@@ -35,6 +47,7 @@ const Donation = () => {
 
   return (
     <div>
+        <ToastContainer />
       {/*  No Data Available Section Start*/}
       <div>
         {displayData.length === 0 && (
@@ -49,6 +62,7 @@ const Donation = () => {
       <div>
         {displayData.length > 0 && (
           <div>
+          
             {/* Donations Cards */}
             <div className="grid lg:grid-cols-2 gap-8 pb-10 justify-center items-center">
               {displayData.map((donated_campaign) => (

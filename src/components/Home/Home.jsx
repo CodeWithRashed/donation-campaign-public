@@ -2,6 +2,8 @@ import { useEffect, useState } from "react";
 import Banner from "./Banner";
 import ProjectCard from "./ProjectCard";
 import { getData } from "../../hook/getData";
+import { ToastContainer, toast } from 'react-toastify';
+  import 'react-toastify/dist/ReactToastify.css';
 const Home = () => {
   const [data, setData] = useState([]);
   const [displayData, setDisplayData] = useState([]);
@@ -31,13 +33,23 @@ const Home = () => {
       );
       setDisplayData(updateData);
     }else{
-      return alert("can not emty");
+      return toast.error("Search can't be empty", {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "light",
+        });
     }
 
   };
 
   return (
     <div>
+      <ToastContainer />
       <Banner handleSearch={handleSearch} handleChange={handleChange}></Banner>
       <div className="card-container grid md:grid-cols-2 lg:grid-cols-4 gap-8 py-20 ">
         {displayData.map((donationProject) => (

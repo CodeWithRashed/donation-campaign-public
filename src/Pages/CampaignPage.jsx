@@ -1,6 +1,8 @@
 import { useEffect, useState } from "react";
 import { getData } from "../hook/getData";
 import { useParams } from "react-router-dom";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const CampaignPage = () => {
   const [data, setData] = useState([]);
@@ -16,15 +18,43 @@ const CampaignPage = () => {
     let donatedCampaignArray = [];
     let localItems = JSON.parse(localStorage.getItem("id")) || [];
     if (localItems.includes(parseInt(id.id))) {
-      return alert("added");
+      return toast.error('Already Donated!!!', {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "light",
+        });
     }
     if (!localItems) {
       donatedCampaignArray.push(parseInt(id.id));
       localStorage.setItem("id", JSON.stringify(donatedCampaignArray));
+      toast.success('Donation Successful!', {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "light",
+        });
     } else {
       donatedCampaignArray.push(...localItems, parseInt(id.id));
       localStorage.setItem("id", JSON.stringify(donatedCampaignArray));
-
+      toast.success('Donation Successful!', {
+        position: "bottom-center",
+        autoClose: 2000,
+        hideProgressBar: true,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "light",
+        });
     }
   };
 
@@ -32,6 +62,7 @@ const CampaignPage = () => {
 
   return (
     <div className="py-12">
+        <ToastContainer />
       {filteredData.map((singleCampaign) => (
         <div className="campaign-container" key={singleCampaign.id}>
           <div className="image-container relative">
