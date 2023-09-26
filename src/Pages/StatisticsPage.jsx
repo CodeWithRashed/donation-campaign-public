@@ -1,7 +1,7 @@
 import PieChart from "../components/Charts/PieChart";
 const StatisticsPage = () => {
   return (
-    <div className="my-16">
+    <div className="lg:my-12">
       <PieChart  ></PieChart>
     </div>
   );
