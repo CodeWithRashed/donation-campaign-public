@@ -19,7 +19,7 @@ const Banner = (props) => {
           </div>
 
           <div className="indicator">
-            <button type='submit'   className="btn join-item bg-[#FF444A] text-white font-Inter font-bold capitalize">
+            <button type='submit' className="btn join-item bg-[#FF444A] text-white font-Inter font-bold capitalize hover:bg-[#FF444A] hover:scale-105">
               Search
             </button>
           </div>

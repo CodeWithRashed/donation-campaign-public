@@ -73,7 +73,7 @@ const CampaignPage = () => {
             />
             <div className="donate-cta p-4 absolute bottom-0 w-full bg-gradient-to-r from-[rgba(18,18,18,0.7)] to-[rgba(18,18,18,0.7)]">
               <button
-                className={`bg-[${singleCampaign.text_color}] text-white p-3 rounded-lg font-bold`}
+                className={`bg-[${singleCampaign.text_color}] text-white p-3 rounded-lg font-bold hover:scale-105`}
                 onClick={handleDonate}
               >
                 Donate {singleCampaign.donation_amount}.00$

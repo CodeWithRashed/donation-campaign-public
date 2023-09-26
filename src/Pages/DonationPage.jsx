@@ -91,7 +91,7 @@ const Donation = () => {
                       </p>
                       <Link
                         to={`campaign/${donated_campaign.id}`}
-                        className={`bg-[${donated_campaign.text_color}] text-white w-max py-1 px-2 rounded-lg lg:mx-0 mx-auto font-normal`}
+                        className={`bg-[${donated_campaign.text_color}] text-white w-max py-1 px-2 rounded-lg lg:mx-0 mx-auto font-normal hover:scale-105`}
                       >
                         <button>View Details</button>
                       </Link>
@@ -105,20 +105,20 @@ const Donation = () => {
               {/* Clear Donations Button */}
               <div
                 onClick={() => handleClear()}
-                className="see-btn bg-[#FF444A] text-white font-bold mb-10 w-max px-8 py-2 rounded-lg inline-block"
+                className="see-btn bg-[#FF444A] text-white font-bold mb-10 w-max px-8 py-2 rounded-lg inline-block hover:scale-105"
               >
                 <button>Clear Donations</button>
               </div>
               {/* Clear Donations Button */}
               {/* See All Button */}
-              <div className="inline-block">
+              <div className="inline-block ">
                 {showAll && (
                  
                     <div
                       onClick={() => handleShowAll()}
-                      className="see-btn bg-[#FF444A] text-white font-bold mb-10 w-max px-8 py-2 rounded-lg "
+                      className="see-btn bg-[#FF444A] text-white font-bold mb-10 w-max px-8 py-2 rounded-lg hover:scale-105"
                     >
-                      <button>Show All Donations</button>
+                      <button>See All Donations</button>
                     </div>
                 
                 )}
