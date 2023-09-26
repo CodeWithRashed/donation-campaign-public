@@ -21,15 +21,21 @@ const Donation = () => {
       setDisplayData(filterData.slice(0, 4));
     });
   }, []);
-  console.log(displayData);
+
   const handleShowAll = () => {
-    console.log("btn Click");
     setDisplayData(donatedCamp);
     setShowAll(false);
+  };
+  const handleClear = () => {
+    localStorage.clear();
+    setShowAll(false);
+    setDisplayData([])
+    
   };
 
   return (
     <div>
+      {/*  No Data Available Section Start*/}
       <div>
         {displayData.length === 0 && (
           <div className="text-xl font-bold my-24 flex justify-center items-center">
@@ -37,9 +43,13 @@ const Donation = () => {
           </div>
         )}
       </div>
+      {/*  No Data Available Section End*/}
+
+      {/*  Data Found Section Start*/}
       <div>
         {displayData.length > 0 && (
           <div>
+            {/* Donations Cards */}
             <div className="grid lg:grid-cols-2 gap-8 pb-10 justify-center items-center">
               {displayData.map((donated_campaign) => (
                 <div className="card-container-main" key={donated_campaign.id}>
@@ -76,17 +86,34 @@ const Donation = () => {
                 </div>
               ))}
             </div>
-            {showAll && (
+            {/* Donations Cards */}
+            <div className="action buttons text-center space-x-6">
+              {/* Clear Donations Button */}
               <div
-                onClick={() => handleShowAll()}
-                className="see-btn bg-[#FF444A] text-white font-bold mb-10 w-max px-8 py-2 rounded-lg mx-auto"
+                onClick={() => handleClear()}
+                className="see-btn bg-[#FF444A] text-white font-bold mb-10 w-max px-8 py-2 rounded-lg inline-block"
               >
-                <button>Show All</button>
+                <button>Clear Donations</button>
               </div>
-            )}
+              {/* Clear Donations Button */}
+              {/* See All Button */}
+              <div className="inline-block">
+                {showAll && (
+                 
+                    <div
+                      onClick={() => handleShowAll()}
+                      className="see-btn bg-[#FF444A] text-white font-bold mb-10 w-max px-8 py-2 rounded-lg "
+                    >
+                      <button>Show All Donations</button>
+                    </div>
+                
+                )}
+              </div>
+            </div>
           </div>
         )}
       </div>
+      {/*  Data Found Section Start*/}
     </div>
   );
 };
